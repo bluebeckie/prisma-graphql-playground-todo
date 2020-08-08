@@ -1,11 +1,14 @@
 const express = require('express');
-const expressPlayground = require('graphql-playground-middleware-express');
+const expressPlayground = require('graphql-playground-middleware-express').default;
 const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const {
     PORT = 5466,
 } = process.env;
+
+const TARGET_INTROSPECT_URL = ''; // TODO
+const TARGET_QUERY_URL = ''; // TODO
 
 const app = express();
 
